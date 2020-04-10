@@ -1,0 +1,30 @@
+.card {
+  margin: .2em;
+  width: 90px;
+}
+
+.card-wrapper {
+  display: inline-flex;
+  position: relative;
+  perspective: 700px;
+  transition: .5s;
+
+  .front, .back {
+    display: inline-flex;
+    transition: 1s;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    position: absolute;
+    transform: rotateY(180deg);
+  }
+
+  .rotate-front {
+    transform: rotateY(180deg);
+  }
+
+  .rotate-back {
+    transform: rotateY(360deg);
+  }
+}

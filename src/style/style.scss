@@ -1,0 +1,77 @@
+@import './modal-round-end.scss';
+@import './dialog-menu.scss';
+@import './modal-game-end.scss';
+@import './card.scss';
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.table {
+  display: flex;
+  width: 100vw;
+  height: 85vh;
+  background-color: #4CAF50;
+  
+  .playing-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .card-container {
+      margin: 7% 0;
+    }
+  }
+
+  .score-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 14%;
+    margin-right: 2em;
+
+    .scoreWrapper {
+      text-align: center;
+    }
+
+    .score {
+      text-align: center;
+      position: relative;
+      
+      .limit {
+        color: red;
+      }
+    }
+  }
+}
+
+.interface {
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  align-items: center;
+  background-color: #757575;
+
+  .btn-wrapper {
+    margin-left: 2em;
+
+    button {
+      margin: 1em;
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
+}
+// .card-wrapper:hover .front {
+//   transform: rotateY(180deg);
+// }
+
+// .card-wrapper:hover .back {
+//   transform: rotateY(360deg);
+// }
